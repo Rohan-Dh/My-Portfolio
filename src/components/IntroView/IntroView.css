@@ -1,0 +1,18 @@
+.intro-view{
+    padding-left: 8%;   
+}
+
+.intro-view .top{
+    width: auto;
+    padding-left: 25px;
+}
+
+.intro-view .down{
+    padding-right: 90px;
+}
+
+.intro-view .down .linkedin, .intro-view .down .github{
+    height: 28px;
+    width: 28px;
+    filter: invert(1);
+}
