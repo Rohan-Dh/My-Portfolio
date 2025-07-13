@@ -1,0 +1,34 @@
+.navbar-back {
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-left p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar-middle {
+    padding-top: 10px;
+    width: 40%;
+    font-size: 24px;
+}
+
+.navbar-middle ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-right img {
+    width: 40px;
+    height: 40px;
+}
