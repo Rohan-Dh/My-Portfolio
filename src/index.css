@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 6%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 189 95% 50%;
+    --primary-foreground: 240 10% 3.9%;
+
+    --secondary: 280 70% 60%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 10% 15%;
+    --muted-foreground: 240 5% 65%;
+
+    --accent: 189 95% 50%;
+    --accent-foreground: 240 10% 3.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 10% 15%;
+    --input: 240 10% 15%;
+    --ring: 189 95% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio colors */
+    --neon-cyan: 189 95% 50%;
+    --neon-purple: 280 70% 60%;
+    --dark-bg: 240 10% 3.9%;
+    --dark-card: 240 10% 6%;
+    --glow-cyan: 189 95% 50%;
+    --glow-purple: 280 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glow-cyan {
+    box-shadow: 0 0 20px hsl(var(--neon-cyan) / 0.5),
+                0 0 40px hsl(var(--neon-cyan) / 0.3);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px hsl(var(--neon-purple) / 0.5),
+                0 0 40px hsl(var(--neon-purple) / 0.3);
+  }
+
+  .glow-text-cyan {
+    text-shadow: 0 0 10px hsl(var(--neon-cyan) / 0.8),
+                 0 0 20px hsl(var(--neon-cyan) / 0.5);
+  }
+
+  .glow-text-purple {
+    text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.8),
+                 0 0 20px hsl(var(--neon-purple) / 0.5);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-purple)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
